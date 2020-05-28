@@ -10,6 +10,14 @@ import (
 
 func main() {
 	wac, err := whatsapp.NewConn(5 * time.Second)
+	//try uncomenting one of these lines if tou can't get it working
+	// wac.SetClientVersion(2, 2021, 3)
+	// wac.SetClientVersion(2, 2021, 4)
+	// wac.SetClientVersion(2, 2021, 2)
+
+
+
+	
 	if err != nil {
 		panic(err)
 	}
